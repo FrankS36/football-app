@@ -238,15 +238,20 @@ function showFormation(type, index) {
     let html = `
         <div class="formation-display">
             <div class="formation-info">
-                <h3>${formation.name}</h3>
-                <p class="description">${formation.description}</p>
-                <div class="when-to-use">
-                    <strong>When to Use:</strong> ${formation.whenToUse}
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3>${formation.name}</h3>
+                    <button class="collapse-btn" onclick="toggleFormationInfo(event)">▼ Hide Details</button>
                 </div>
-                <div class="formation-strengths">
-                    ${formation.strengths.map(strength => `
-                        <span class="strength-badge">${strength}</span>
-                    `).join('')}
+                <div class="formation-details">
+                    <p class="description">${formation.description}</p>
+                    <div class="when-to-use">
+                        <strong>When to Use:</strong> ${formation.whenToUse}
+                    </div>
+                    <div class="formation-strengths">
+                        ${formation.strengths.map(strength => `
+                            <span class="strength-badge">${strength}</span>
+                        `).join('')}
+                    </div>
                 </div>
             </div>
             <div class="formation-field">
@@ -307,4 +312,19 @@ function loadGameBasics() {
 
     html += '</div>';
     contentDiv.innerHTML = html;
+}
+
+// Toggle formation info visibility
+function toggleFormationInfo(event) {
+    event.preventDefault();
+    const btn = event.target;
+    const details = btn.closest('.formation-info').querySelector('.formation-details');
+
+    if (details.style.display === 'none') {
+        details.style.display = 'block';
+        btn.textContent = '▼ Hide Details';
+    } else {
+        details.style.display = 'none';
+        btn.textContent = '▶ Show Details';
+    }
 }
