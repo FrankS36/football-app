@@ -1,0 +1,709 @@
+{
+  "userProfile": {
+    "name": "Champ",
+    "level": 5,
+    "greeting": "Hey, Champ!"
+  },
+  "positions": {
+    "QB": {
+      "name": "Quarterback (QB)",
+      "role": "The leader of the offense! Throws passes, hands off the ball, and calls plays.",
+      "responsibilities": [
+        "Reads the defense before the snap",
+        "Throws accurate passes to receivers",
+        "Hands off to running backs",
+        "Makes quick decisions under pressure"
+      ],
+      "famousPlayers": ["Tom Brady", "Patrick Mahomes", "Aaron Rodgers"],
+      "side": "offense",
+      "position": "backfield"
+    },
+    "FB": {
+      "name": "Fullback (FB)",
+      "role": "A powerful blocking back who leads the way for the running back.",
+      "responsibilities": [
+        "Blocks for the running back",
+        "Catches short passes",
+        "Runs the ball on short yardage plays",
+        "Protects the quarterback"
+      ],
+      "famousPlayers": ["Mike Alstott", "Larry Csonka", "Jim Brown"],
+      "side": "offense",
+      "position": "backfield"
+    },
+    "HB": {
+      "name": "Halfback/Running Back (HB/RB)",
+      "role": "The primary ball carrier who runs with the ball.",
+      "responsibilities": [
+        "Runs with the ball when handed off",
+        "Catches passes out of backfield",
+        "Blocks for the quarterback",
+        "Finds holes in the defense"
+      ],
+      "famousPlayers": ["Barry Sanders", "Walter Payton", "Emmitt Smith"],
+      "side": "offense",
+      "position": "backfield"
+    },
+    "WR": {
+      "name": "Wide Receiver (WR)",
+      "role": "Catches passes from the quarterback and gains yards.",
+      "responsibilities": [
+        "Runs precise routes to get open",
+        "Catches the football",
+        "Runs after the catch for extra yards",
+        "Blocks on running plays"
+      ],
+      "famousPlayers": ["Jerry Rice", "Randy Moss", "Calvin Johnson"],
+      "side": "offense",
+      "position": "receiver"
+    },
+    "TE": {
+      "name": "Tight End (TE)",
+      "role": "A mix between a receiver and an offensive lineman.",
+      "responsibilities": [
+        "Catches passes like a receiver",
+        "Blocks defenders like a lineman",
+        "Lines up next to the offensive line",
+        "Creates mismatches against defenders"
+      ],
+      "famousPlayers": ["Tony Gonzalez", "Rob Gronkowski", "Travis Kelce"],
+      "side": "offense",
+      "position": "line"
+    },
+    "LT": {
+      "name": "Left Tackle (LT)",
+      "role": "Protects the quarterback's blind side - the most important offensive lineman.",
+      "responsibilities": [
+        "Blocks edge rushers on the left side",
+        "Protects quarterback's blind side (for right-handed QBs)",
+        "Creates running lanes outside",
+        "Needs great footwork and strength"
+      ],
+      "famousPlayers": ["Anthony Muñoz", "Jonathan Ogden", "Walter Jones"],
+      "side": "offense",
+      "position": "line"
+    },
+    "LG": {
+      "name": "Left Guard (LG)",
+      "role": "Protects the quarterback and creates running lanes on the left side.",
+      "responsibilities": [
+        "Blocks defensive tackles",
+        "Opens holes for running backs",
+        "Protects the quarterback",
+        "Pulls to lead block on runs"
+      ],
+      "famousPlayers": ["John Hannah", "Larry Allen", "Gene Upshaw"],
+      "side": "offense",
+      "position": "line"
+    },
+    "C": {
+      "name": "Center (C)",
+      "role": "Snaps the ball to start every play and protects the QB.",
+      "responsibilities": [
+        "Snaps the ball to the quarterback",
+        "Calls out defensive alignments",
+        "Blocks defensive linemen",
+        "Leader of the offensive line"
+      ],
+      "famousPlayers": ["Mike Webster", "Jim Otto", "Dwight Stephenson"],
+      "side": "offense",
+      "position": "line"
+    },
+    "RG": {
+      "name": "Right Guard (RG)",
+      "role": "Protects the quarterback and creates running lanes on the right side.",
+      "responsibilities": [
+        "Blocks defensive tackles",
+        "Opens holes for running backs",
+        "Protects the quarterback",
+        "Pulls to lead block on runs"
+      ],
+      "famousPlayers": ["Randall McDaniel", "Will Shields", "Zack Martin"],
+      "side": "offense",
+      "position": "line"
+    },
+    "RT": {
+      "name": "Right Tackle (RT)",
+      "role": "Big blocker who protects the right edge.",
+      "responsibilities": [
+        "Blocks edge rushers on the right side",
+        "Protects the quarterback",
+        "Creates running lanes outside",
+        "Needs great strength and technique"
+      ],
+      "famousPlayers": ["Willie Roaf", "Larry Allen", "Tyron Smith"],
+      "side": "offense",
+      "position": "line"
+    },
+    "DE": {
+      "name": "Defensive End (DE)",
+      "role": "Rushes the quarterback from the edge and contains running plays.",
+      "responsibilities": [
+        "Rushes the passer from the edge",
+        "Sets the edge on running plays",
+        "Tackles running backs",
+        "Forces quarterback to step up"
+      ],
+      "famousPlayers": ["Reggie White", "Bruce Smith", "J.J. Watt"],
+      "side": "defense",
+      "position": "line"
+    },
+    "DT": {
+      "name": "Defensive Tackle (DT)",
+      "role": "Plugs the middle and stops the run up the gut.",
+      "responsibilities": [
+        "Rushes up the middle",
+        "Stops inside running plays",
+        "Occupies offensive linemen",
+        "Creates pressure up front"
+      ],
+      "famousPlayers": ["Aaron Donald", "Warren Sapp", "Mean Joe Greene"],
+      "side": "defense",
+      "position": "line"
+    },
+    "MLB": {
+      "name": "Middle Linebacker (MLB)",
+      "role": "The quarterback of the defense - calls plays and makes tackles.",
+      "responsibilities": [
+        "Stops the run up the middle",
+        "Covers tight ends and running backs",
+        "Calls defensive plays and adjustments",
+        "Tackles ball carriers"
+      ],
+      "famousPlayers": ["Ray Lewis", "Dick Butkus", "Mike Singletary"],
+      "side": "defense",
+      "position": "linebacker"
+    },
+    "OLB": {
+      "name": "Outside Linebacker (OLB)",
+      "role": "Versatile defender who covers, rushes, and tackles on the outside.",
+      "responsibilities": [
+        "Stops outside runs",
+        "Covers tight ends and running backs",
+        "Rushes the quarterback on blitzes",
+        "Defends against screen passes"
+      ],
+      "famousPlayers": ["Lawrence Taylor", "Von Miller", "Derrick Thomas"],
+      "side": "defense",
+      "position": "linebacker"
+    },
+    "CB": {
+      "name": "Cornerback (CB)",
+      "role": "Covers wide receivers and defends passes.",
+      "responsibilities": [
+        "Covers wide receivers",
+        "Defends against passes",
+        "Tackles after catches",
+        "Intercepts passes"
+      ],
+      "famousPlayers": ["Deion Sanders", "Rod Woodson", "Charles Woodson"],
+      "side": "defense",
+      "position": "secondary"
+    },
+    "FS": {
+      "name": "Free Safety (FS)",
+      "role": "The center fielder of football - provides deep coverage help.",
+      "responsibilities": [
+        "Provides deep pass coverage",
+        "Reads the quarterback's eyes",
+        "Makes open-field tackles",
+        "Helps cornerbacks on deep routes"
+      ],
+      "famousPlayers": ["Ed Reed", "Earl Thomas", "Ronnie Lott"],
+      "side": "defense",
+      "position": "secondary"
+    },
+    "SS": {
+      "name": "Strong Safety (SS)",
+      "role": "Physical safety who plays closer to the line and stops the run.",
+      "responsibilities": [
+        "Supports against the run",
+        "Covers tight ends",
+        "Makes hard tackles",
+        "Blitzes the quarterback"
+      ],
+      "famousPlayers": ["Troy Polamalu", "John Lynch", "Bob Sanders"],
+      "side": "defense",
+      "position": "secondary"
+    }
+  },
+  "penalties": [
+    {
+      "id": "holding",
+      "name": "Holding",
+      "description": "Grabbing or restraining an opponent",
+      "yards": "-10 yards",
+      "explanation": "Holding occurs when a player grabs or restrains an opponent to prevent them from moving freely.",
+      "commonSituation": "Often called on offensive linemen trying to stop pass rushers"
+    },
+    {
+      "id": "false-start",
+      "name": "False Start",
+      "description": "Offensive player moves before snap",
+      "yards": "-5 yards",
+      "explanation": "A false start happens when an offensive player moves before the ball is snapped.",
+      "commonSituation": "Usually occurs when a lineman flinches or moves too early"
+    },
+    {
+      "id": "offsides",
+      "name": "Offsides",
+      "description": "Player crosses line before snap",
+      "yards": "-5 yards",
+      "explanation": "Offsides occurs when a defensive player crosses the line of scrimmage before the ball is snapped.",
+      "commonSituation": "Defensive players trying to time the snap perfectly"
+    },
+    {
+      "id": "pass-interference",
+      "name": "Pass Interference",
+      "description": "Illegal contact on a receiver",
+      "yards": "Spot foul",
+      "explanation": "Pass interference is called when a defender makes illegal contact with a receiver while the ball is in the air.",
+      "commonSituation": "Defender grabs, pushes, or impedes a receiver's ability to catch the ball"
+    },
+    {
+      "id": "face-mask",
+      "name": "Face Mask",
+      "description": "Grabbing opponent's face mask",
+      "yards": "-15 yards",
+      "explanation": "A face mask penalty occurs when a player grabs another player's face mask, which is dangerous.",
+      "commonSituation": "Often happens during tackles when players accidentally grab the face mask"
+    },
+    {
+      "id": "roughing",
+      "name": "Roughing the Passer",
+      "description": "Hitting QB after throw",
+      "yards": "-15 yards",
+      "explanation": "Roughing the passer is called when a defender hits the quarterback after they've thrown the ball.",
+      "commonSituation": "Protects quarterbacks from late hits that could cause injury"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "penalty-quiz-1",
+      "question": "A defensive player grabs the jersey of a receiver running a route. What's the penalty?",
+      "options": [
+        {"text": "A) Holding", "correct": false},
+        {"text": "B) Face Mask", "correct": false},
+        {"text": "C) Pass Interference", "correct": true},
+        {"text": "D) Offsides", "correct": false}
+      ],
+      "explanation": "Pass interference is when a defender illegally contacts a receiver while the ball is in the air!"
+    }
+  ],
+  "progress": {
+    "overallProgress": 65,
+    "positionsMastered": 8,
+    "totalPositions": 11,
+    "rulesKnown": 12,
+    "totalRules": 24,
+    "weeklyActivity": {
+      "lessonsCompleted": 5,
+      "notesWritten": 8,
+      "quizzesPassed": 3,
+      "timeSpent": "2 hours 15 minutes"
+    }
+  },
+  "badges": [
+    {
+      "id": "first-steps",
+      "emoji": "🏈",
+      "name": "First Steps",
+      "earned": true
+    },
+    {
+      "id": "quiz-master",
+      "emoji": "⭐",
+      "name": "Quiz Master",
+      "earned": true
+    },
+    {
+      "id": "bookworm",
+      "emoji": "📚",
+      "name": "Bookworm",
+      "earned": true
+    },
+    {
+      "id": "7-day-streak",
+      "emoji": "🔥",
+      "name": "7 Day Streak",
+      "earned": false
+    },
+    {
+      "id": "perfect-score",
+      "emoji": "🎯",
+      "name": "Perfect Score",
+      "earned": false
+    }
+  ],
+  "learningGoals": [
+    {
+      "id": "goal-1",
+      "text": "Learn all 11 offensive positions",
+      "completed": false
+    },
+    {
+      "id": "goal-2",
+      "text": "Understand 5 common penalties",
+      "completed": false
+    },
+    {
+      "id": "goal-3",
+      "text": "Watch and analyze a full game",
+      "completed": false
+    }
+  ],
+  "gameBasics": {
+    "fieldDimensions": {
+      "title": "The Football Field",
+      "icon": "🏟️",
+      "facts": [
+        {
+          "label": "Field Length",
+          "value": "100 yards",
+          "explanation": "The playing field is 100 yards long, divided into yard lines every 5 yards"
+        },
+        {
+          "label": "End Zones",
+          "value": "10 yards each",
+          "explanation": "Each end zone is 10 yards deep. Total field length including end zones is 120 yards"
+        },
+        {
+          "label": "Field Width",
+          "value": "53⅓ yards",
+          "explanation": "The field is 160 feet wide (53 and 1/3 yards)"
+        },
+        {
+          "label": "Hash Marks",
+          "value": "Every yard",
+          "explanation": "Hash marks show where the ball is placed. In the NFL they're 70 feet 9 inches apart"
+        },
+        {
+          "label": "Goal Posts",
+          "value": "18.5 feet wide",
+          "explanation": "Goal posts are at the back of each end zone, 10 feet high with a crossbar"
+        }
+      ]
+    },
+    "gameStructure": {
+      "title": "How the Game Works",
+      "icon": "⏱️",
+      "facts": [
+        {
+          "label": "Quarters",
+          "value": "4 quarters",
+          "explanation": "Each game has 4 quarters of 15 minutes each (12 minutes in high school)"
+        },
+        {
+          "label": "Halftime",
+          "value": "12-20 minutes",
+          "explanation": "Break between 2nd and 3rd quarters (longer for college/NFL, shorter for youth)"
+        },
+        {
+          "label": "Downs",
+          "value": "4 chances",
+          "explanation": "The offense gets 4 tries (downs) to move the ball 10 yards. If successful, they get 4 more downs"
+        },
+        {
+          "label": "Play Clock",
+          "value": "40 seconds",
+          "explanation": "Teams have 40 seconds to start the next play (25 seconds after certain stoppages)"
+        },
+        {
+          "label": "Game Clock",
+          "value": "Stops & Starts",
+          "explanation": "Clock stops for incomplete passes, out of bounds, timeouts, penalties, and scores"
+        }
+      ]
+    },
+    "timeouts": {
+      "title": "Timeouts & Challenges",
+      "icon": "🛑",
+      "facts": [
+        {
+          "label": "Team Timeouts",
+          "value": "3 per half",
+          "explanation": "Each team gets 3 timeouts per half. Unused timeouts don't carry over to the 2nd half"
+        },
+        {
+          "label": "Timeout Length",
+          "value": "30 seconds",
+          "explanation": "TV timeouts are longer (about 2 minutes), but team timeouts are 30 seconds"
+        },
+        {
+          "label": "Two-Minute Warning",
+          "value": "NFL only",
+          "explanation": "Automatic timeout at 2:00 remaining in each half (NFL only, not college/high school)"
+        },
+        {
+          "label": "Coach Challenges",
+          "value": "2 per game",
+          "explanation": "Coaches can challenge referee calls. If they win both challenges, they get a 3rd"
+        },
+        {
+          "label": "Challenge Rules",
+          "value": "Must have timeout",
+          "explanation": "To challenge a play, you must have a timeout remaining. If you lose, you lose the timeout"
+        }
+      ]
+    },
+    "scoring": {
+      "title": "How to Score Points",
+      "icon": "🎯",
+      "facts": [
+        {
+          "label": "Touchdown (TD)",
+          "value": "6 points",
+          "explanation": "Ball crosses the goal line in the end zone. Most valuable way to score!"
+        },
+        {
+          "label": "Extra Point (PAT)",
+          "value": "1 or 2 points",
+          "explanation": "After TD: Kick through goal posts (1 pt) or run/pass into end zone from 2-yard line (2 pts)"
+        },
+        {
+          "label": "Field Goal (FG)",
+          "value": "3 points",
+          "explanation": "Kicker kicks ball through goal posts from anywhere on the field"
+        },
+        {
+          "label": "Safety",
+          "value": "2 points",
+          "explanation": "Defense tackles ball carrier in their own end zone. Rare but exciting!"
+        },
+        {
+          "label": "Two-Point Conversion",
+          "value": "2 points",
+          "explanation": "Instead of kicking extra point, team tries to get ball in end zone from 2-yard line"
+        }
+      ]
+    },
+    "gameplay": {
+      "title": "Game Flow & Rules",
+      "icon": "🏈",
+      "facts": [
+        {
+          "label": "Kickoff",
+          "value": "Starts each half",
+          "explanation": "Game begins with kickoff. Kicking team kicks from their 35-yard line"
+        },
+        {
+          "label": "First Down",
+          "value": "Gain 10 yards",
+          "explanation": "Offense needs to gain 10 yards in 4 tries to earn a new set of 4 downs"
+        },
+        {
+          "label": "Turnover",
+          "value": "Lose possession",
+          "explanation": "If offense doesn't get 10 yards in 4 downs, other team gets the ball. Also happens on interceptions and fumbles"
+        },
+        {
+          "label": "Punt",
+          "value": "4th down kick",
+          "explanation": "On 4th down, teams often punt to kick the ball far away, giving it to the other team"
+        },
+        {
+          "label": "Overtime",
+          "value": "If tied",
+          "explanation": "If game is tied after 4 quarters, teams play overtime. Rules vary by league (NFL, college, high school)"
+        }
+      ]
+    },
+    "teams": {
+      "title": "Team Size & Roster",
+      "icon": "👥",
+      "facts": [
+        {
+          "label": "Players on Field",
+          "value": "11 per team",
+          "explanation": "Each team has exactly 11 players on the field at all times (22 total)"
+        },
+        {
+          "label": "NFL Roster",
+          "value": "53 players",
+          "explanation": "NFL teams can have 53 players on their active roster"
+        },
+        {
+          "label": "Game Day Active",
+          "value": "46 players",
+          "explanation": "Of the 53 roster players, only 46 can be active and dress for each game"
+        },
+        {
+          "label": "Three Units",
+          "value": "Offense, Defense, Special Teams",
+          "explanation": "Teams have separate units: offense (score points), defense (stop other team), special teams (kicks)"
+        },
+        {
+          "label": "Substitutions",
+          "value": "Unlimited",
+          "explanation": "Teams can substitute players freely between plays, but all 11 must be set before snap"
+        }
+      ]
+    }
+  },
+  "formations": {
+    "offense": [
+      {
+        "id": "i-formation",
+        "name": "I-Formation",
+        "description": "Classic power running formation with FB directly in front of HB",
+        "whenToUse": "Short yardage situations, power running game",
+        "strengths": ["Strong running attack", "Good pass protection", "FB can lead block"],
+        "positions": {
+          "QB": {"left": 8, "top": 47},
+          "FB": {"left": 16, "top": 47},
+          "HB": {"left": 22, "top": 47},
+          "LT": {"left": 28, "top": 12},
+          "LG": {"left": 28, "top": 32},
+          "C": {"left": 28, "top": 47},
+          "RG": {"left": 28, "top": 62},
+          "RT": {"left": 28, "top": 82},
+          "WR": {"left": 28, "top": 3},
+          "TE": {"left": 28, "top": 92},
+          "WR2": {"left": 20, "top": 90}
+        }
+      },
+      {
+        "id": "shotgun",
+        "name": "Shotgun Formation",
+        "description": "QB lines up 5 yards behind center for better passing visibility",
+        "whenToUse": "Passing situations, long yardage",
+        "strengths": ["Better passing angles", "More time to read defense", "Spread out defense"],
+        "positions": {
+          "QB": {"left": 5, "top": 47},
+          "HB": {"left": 12, "top": 35},
+          "FB": {"left": 12, "top": 59},
+          "LT": {"left": 28, "top": 12},
+          "LG": {"left": 28, "top": 32},
+          "C": {"left": 28, "top": 47},
+          "RG": {"left": 28, "top": 62},
+          "RT": {"left": 28, "top": 82},
+          "WR": {"left": 28, "top": 3},
+          "TE": {"left": 28, "top": 92},
+          "WR2": {"left": 20, "top": 90}
+        }
+      },
+      {
+        "id": "spread",
+        "name": "Spread Formation",
+        "description": "Multiple receivers spread across the field to create space",
+        "whenToUse": "Passing downs, quick tempo offense",
+        "strengths": ["Creates space", "Mismatches with speed", "Hard to defend all receivers"],
+        "positions": {
+          "QB": {"left": 5, "top": 47},
+          "HB": {"left": 12, "top": 47},
+          "LT": {"left": 28, "top": 20},
+          "LG": {"left": 28, "top": 35},
+          "C": {"left": 28, "top": 47},
+          "RG": {"left": 28, "top": 59},
+          "RT": {"left": 28, "top": 74},
+          "WR": {"left": 28, "top": 3},
+          "WR2": {"left": 20, "top": 90},
+          "WR3": {"left": 28, "top": 92},
+          "WR4": {"left": 18, "top": 15}
+        }
+      },
+      {
+        "id": "pro-set",
+        "name": "Pro Set",
+        "description": "Balanced formation with two backs side-by-side behind QB",
+        "whenToUse": "Balanced attack, keeps defense guessing",
+        "strengths": ["Versatile", "Good for run or pass", "Multiple options"],
+        "positions": {
+          "QB": {"left": 8, "top": 47},
+          "HB": {"left": 16, "top": 38},
+          "FB": {"left": 16, "top": 56},
+          "LT": {"left": 28, "top": 12},
+          "LG": {"left": 28, "top": 32},
+          "C": {"left": 28, "top": 47},
+          "RG": {"left": 28, "top": 62},
+          "RT": {"left": 28, "top": 82},
+          "WR": {"left": 28, "top": 3},
+          "TE": {"left": 28, "top": 92},
+          "WR2": {"left": 20, "top": 90}
+        }
+      }
+    ],
+    "defense": [
+      {
+        "id": "4-3-defense",
+        "name": "4-3 Defense",
+        "description": "Four down linemen and three linebackers - most common defense",
+        "whenToUse": "Standard defensive formation, good against run and pass",
+        "strengths": ["Balanced", "Strong against run", "Good pass rush"],
+        "positions": {
+          "DE": {"right": 32, "top": 25},
+          "DT": {"right": 35, "top": 40},
+          "DT2": {"right": 35, "top": 55},
+          "DE2": {"right": 32, "top": 70},
+          "OLB": {"right": 24, "top": 30},
+          "MLB": {"right": 24, "top": 47},
+          "OLB2": {"right": 24, "top": 64},
+          "CB": {"right": 12, "top": 20},
+          "CB2": {"right": 12, "top": 74},
+          "FS": {"right": 5, "top": 35},
+          "SS": {"right": 5, "top": 59}
+        }
+      },
+      {
+        "id": "3-4-defense",
+        "name": "3-4 Defense",
+        "description": "Three down linemen and four linebackers - versatile and unpredictable",
+        "whenToUse": "When you want more flexibility in blitzing",
+        "strengths": ["More blitz options", "Confuses offense", "Versatile coverage"],
+        "positions": {
+          "DE": {"right": 32, "top": 25},
+          "NT": {"right": 35, "top": 47},
+          "DE2": {"right": 32, "top": 70},
+          "OLB": {"right": 24, "top": 18},
+          "ILB": {"right": 24, "top": 38},
+          "ILB2": {"right": 24, "top": 56},
+          "OLB2": {"right": 24, "top": 76},
+          "CB": {"right": 12, "top": 20},
+          "CB2": {"right": 12, "top": 74},
+          "FS": {"right": 5, "top": 35},
+          "SS": {"right": 5, "top": 59}
+        }
+      },
+      {
+        "id": "nickel",
+        "name": "Nickel Defense",
+        "description": "Removes a linebacker, adds a 5th defensive back for passing situations",
+        "whenToUse": "Obvious passing downs, need more coverage",
+        "strengths": ["Better pass coverage", "Faster defenders", "Matches spread offense"],
+        "positions": {
+          "DE": {"right": 32, "top": 25},
+          "DT": {"right": 35, "top": 40},
+          "DT2": {"right": 35, "top": 55},
+          "DE2": {"right": 32, "top": 70},
+          "OLB": {"right": 24, "top": 30},
+          "MLB": {"right": 24, "top": 64},
+          "CB": {"right": 12, "top": 15},
+          "CB2": {"right": 12, "top": 47},
+          "CB3": {"right": 12, "top": 79},
+          "FS": {"right": 5, "top": 30},
+          "SS": {"right": 5, "top": 64}
+        }
+      },
+      {
+        "id": "cover-2",
+        "name": "Cover 2 (Tampa 2)",
+        "description": "Two safeties split the deep field in half, cornerbacks play underneath",
+        "whenToUse": "Prevent deep passes, force short completions",
+        "strengths": ["No deep passes", "Good against vertical routes", "Simple coverage"],
+        "positions": {
+          "DE": {"right": 32, "top": 25},
+          "DT": {"right": 35, "top": 40},
+          "DT2": {"right": 35, "top": 55},
+          "DE2": {"right": 32, "top": 70},
+          "OLB": {"right": 24, "top": 30},
+          "MLB": {"right": 24, "top": 47},
+          "OLB2": {"right": 24, "top": 64},
+          "CB": {"right": 16, "top": 20},
+          "CB2": {"right": 16, "top": 74},
+          "FS": {"right": 5, "top": 25},
+          "SS": {"right": 5, "top": 69}
+        }
+      }
+    ]
+  }
+}
