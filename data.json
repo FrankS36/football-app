@@ -288,6 +288,160 @@
         {"text": "D) Offsides", "correct": false}
       ],
       "explanation": "Pass interference is when a defender illegally contacts a receiver while the ball is in the air!"
+    },
+    {
+      "id": "position-quiz-1",
+      "question": "Which position snaps the ball to start every play?",
+      "options": [
+        {"text": "A) Quarterback", "correct": false},
+        {"text": "B) Center", "correct": true},
+        {"text": "C) Guard", "correct": false},
+        {"text": "D) Running Back", "correct": false}
+      ],
+      "explanation": "The Center snaps the ball to the quarterback to start every offensive play!"
+    },
+    {
+      "id": "position-quiz-2",
+      "question": "Who is called the 'quarterback of the defense'?",
+      "options": [
+        {"text": "A) Free Safety", "correct": false},
+        {"text": "B) Cornerback", "correct": false},
+        {"text": "C) Middle Linebacker", "correct": true},
+        {"text": "D) Defensive End", "correct": false}
+      ],
+      "explanation": "The Middle Linebacker calls defensive plays and adjustments, just like a QB leads the offense!"
+    },
+    {
+      "id": "scoring-quiz-1",
+      "question": "How many points is a touchdown worth?",
+      "options": [
+        {"text": "A) 3 points", "correct": false},
+        {"text": "B) 6 points", "correct": true},
+        {"text": "C) 7 points", "correct": false},
+        {"text": "D) 8 points", "correct": false}
+      ],
+      "explanation": "A touchdown is worth 6 points! Teams can then try for 1 or 2 extra points."
+    },
+    {
+      "id": "scoring-quiz-2",
+      "question": "What is it called when the defense tackles the offense in their own end zone?",
+      "options": [
+        {"text": "A) Touchback", "correct": false},
+        {"text": "B) Safety", "correct": true},
+        {"text": "C) Field Goal", "correct": false},
+        {"text": "D) Interception", "correct": false}
+      ],
+      "explanation": "A Safety is worth 2 points for the defense! It's rare but exciting when it happens."
+    },
+    {
+      "id": "rules-quiz-1",
+      "question": "How many downs (chances) does the offense get to move 10 yards?",
+      "options": [
+        {"text": "A) 2 downs", "correct": false},
+        {"text": "B) 3 downs", "correct": false},
+        {"text": "C) 4 downs", "correct": true},
+        {"text": "D) 5 downs", "correct": false}
+      ],
+      "explanation": "The offense gets 4 tries to move the ball 10 yards. If they succeed, they get 4 more downs!"
+    },
+    {
+      "id": "rules-quiz-2",
+      "question": "How many players from each team are on the field during a play?",
+      "options": [
+        {"text": "A) 9 players", "correct": false},
+        {"text": "B) 10 players", "correct": false},
+        {"text": "C) 11 players", "correct": true},
+        {"text": "D) 12 players", "correct": false}
+      ],
+      "explanation": "Each team has exactly 11 players on the field, making 22 total players!"
+    },
+    {
+      "id": "penalty-quiz-2",
+      "question": "An offensive lineman moves before the ball is snapped. What's the penalty?",
+      "options": [
+        {"text": "A) Offsides", "correct": false},
+        {"text": "B) False Start", "correct": true},
+        {"text": "C) Holding", "correct": false},
+        {"text": "D) Delay of Game", "correct": false}
+      ],
+      "explanation": "False Start is when an offensive player moves before the snap. It's a 5-yard penalty."
+    },
+    {
+      "id": "position-quiz-3",
+      "question": "Which offensive position is a mix between a receiver and a lineman?",
+      "options": [
+        {"text": "A) Fullback", "correct": false},
+        {"text": "B) Tight End", "correct": true},
+        {"text": "C) Running Back", "correct": false},
+        {"text": "D) Wide Receiver", "correct": false}
+      ],
+      "explanation": "The Tight End blocks like a lineman but can also catch passes like a receiver!"
+    },
+    {
+      "id": "formation-quiz-1",
+      "question": "In which formation does the QB line up 5 yards behind the center?",
+      "options": [
+        {"text": "A) I-Formation", "correct": false},
+        {"text": "B) Pro Set", "correct": false},
+        {"text": "C) Shotgun", "correct": true},
+        {"text": "D) Wildcat", "correct": false}
+      ],
+      "explanation": "The Shotgun formation puts the QB further back for better passing visibility!"
+    },
+    {
+      "id": "field-quiz-1",
+      "question": "How long is a football field from end zone to end zone?",
+      "options": [
+        {"text": "A) 100 yards", "correct": false},
+        {"text": "B) 110 yards", "correct": false},
+        {"text": "C) 120 yards", "correct": true},
+        {"text": "D) 150 yards", "correct": false}
+      ],
+      "explanation": "The playing field is 100 yards, plus 10 yards for each end zone = 120 yards total!"
+    },
+    {
+      "id": "game-quiz-1",
+      "question": "How many quarters are in a football game?",
+      "options": [
+        {"text": "A) 2 quarters", "correct": false},
+        {"text": "B) 3 quarters", "correct": false},
+        {"text": "C) 4 quarters", "correct": true},
+        {"text": "D) 6 quarters", "correct": false}
+      ],
+      "explanation": "A football game has 4 quarters, each 15 minutes long (12 minutes in high school)!"
+    },
+    {
+      "id": "position-quiz-4",
+      "question": "Which position is known for protecting the quarterback's blind side?",
+      "options": [
+        {"text": "A) Right Tackle", "correct": false},
+        {"text": "B) Left Tackle", "correct": true},
+        {"text": "C) Center", "correct": false},
+        {"text": "D) Tight End", "correct": false}
+      ],
+      "explanation": "The Left Tackle protects a right-handed QB's blind side - it's one of the most important positions!"
+    },
+    {
+      "id": "defense-quiz-1",
+      "question": "Which defensive formation has 4 down linemen and 3 linebackers?",
+      "options": [
+        {"text": "A) 3-4 Defense", "correct": false},
+        {"text": "B) 4-3 Defense", "correct": true},
+        {"text": "C) Nickel Defense", "correct": false},
+        {"text": "D) Dime Defense", "correct": false}
+      ],
+      "explanation": "The 4-3 Defense is the most common formation with 4 linemen and 3 linebackers!"
+    },
+    {
+      "id": "special-teams-quiz-1",
+      "question": "What is it called when a team kicks the ball away on 4th down?",
+      "options": [
+        {"text": "A) Field Goal", "correct": false},
+        {"text": "B) Kickoff", "correct": false},
+        {"text": "C) Punt", "correct": true},
+        {"text": "D) Touchback", "correct": false}
+      ],
+      "explanation": "A Punt kicks the ball far away to the other team, giving them worse field position!"
     }
   ],
   "progress": {

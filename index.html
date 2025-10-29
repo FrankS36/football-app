@@ -234,13 +234,16 @@
                 </div>
 
                 <div class="quiz-container" style="margin-top: 30px;">
-                    <h3>🎯 Quick Quiz: Can You Identify This Penalty?</h3>
-                    <div class="quiz-question">A defensive player grabs the jersey of a receiver running a route. What's the penalty?</div>
-                    <div class="quiz-options">
-                        <div class="quiz-option" onclick="checkAnswer(this, false)">A) Holding</div>
-                        <div class="quiz-option" onclick="checkAnswer(this, false)">B) Face Mask</div>
-                        <div class="quiz-option" onclick="checkAnswer(this, true)">C) Pass Interference</div>
-                        <div class="quiz-option" onclick="checkAnswer(this, false)">D) Offsides</div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <h3>🎯 Football Quiz</h3>
+                        <span id="quiz-counter" style="color: #667eea; font-weight: bold;">Question 1 of 15</span>
+                    </div>
+                    <div id="quiz-question" class="quiz-question">Loading question...</div>
+                    <div id="quiz-options" class="quiz-options">
+                        <!-- Options loaded by JavaScript -->
+                    </div>
+                    <div id="quiz-feedback" class="quiz-feedback" style="display: none;">
+                        <!-- Feedback shown here -->
                     </div>
                 </div>
             </div>

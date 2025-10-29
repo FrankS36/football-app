@@ -476,6 +476,36 @@ body {
     background: #fadbd8;
 }
 
+.quiz-feedback {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    animation: slideIn 0.3s ease;
+}
+
+.quiz-feedback.success {
+    background: #d5f4e6;
+    border: 3px solid #27ae60;
+    color: #1e7e34;
+}
+
+.quiz-feedback.error {
+    background: #fadbd8;
+    border: 3px solid #e74c3c;
+    color: #c0392b;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .section-header {
     color: #2c3e50;
     font-size: 32px;

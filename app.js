@@ -3,6 +3,8 @@ let appData = {};
 let positionData = {};
 let formations = {};
 let gameBasics = {};
+let quizzes = [];
+let currentQuizIndex = 0;
 
 // Load data on page load
 fetch('data.json')
@@ -12,11 +14,14 @@ fetch('data.json')
         positionData = data.positions;
         formations = data.formations;
         gameBasics = data.gameBasics;
+        quizzes = data.quizzes;
         // Initialize formations with first formation of each type
         showFormation('offense', 0);
         showFormation('defense', 0);
         // Initialize game basics
         loadGameBasics();
+        // Initialize quiz
+        loadQuiz(currentQuizIndex);
     })
     .catch(error => console.error('Error loading data:', error));
 
@@ -73,19 +78,80 @@ function showPenaltyDetail(penaltyType) {
     alert(`You clicked on ${penaltyType}! In a full app, this would show an animated explanation and examples.`);
 }
 
-// Quiz answer checking
-function checkAnswer(element, isCorrect) {
+// Load Quiz
+function loadQuiz(index) {
+    if (!quizzes || quizzes.length === 0) return;
+
+    const quiz = quizzes[index];
+    const questionDiv = document.getElementById('quiz-question');
+    const optionsDiv = document.getElementById('quiz-options');
+    const counterDiv = document.getElementById('quiz-counter');
+
+    if (!questionDiv || !optionsDiv) return;
+
+    // Update counter
+    if (counterDiv) {
+        counterDiv.textContent = `Question ${index + 1} of ${quizzes.length}`;
+    }
+
+    // Update question
+    questionDiv.textContent = quiz.question;
+
+    // Clear and update options
+    optionsDiv.innerHTML = '';
+    quiz.options.forEach((option, i) => {
+        const optionDiv = document.createElement('div');
+        optionDiv.className = 'quiz-option';
+        optionDiv.textContent = option.text;
+        optionDiv.onclick = () => checkAnswer(optionDiv, option.correct, quiz.explanation);
+        optionsDiv.appendChild(optionDiv);
+    });
+}
+
+// Quiz answer checking with auto-advance
+function checkAnswer(element, isCorrect, explanation) {
+    // Disable all options
+    const allOptions = document.querySelectorAll('.quiz-option');
+    allOptions.forEach(opt => opt.style.pointerEvents = 'none');
+
+    const feedbackDiv = document.getElementById('quiz-feedback');
+
     if (isCorrect) {
         element.classList.add('correct');
+
+        // Show success feedback
+        feedbackDiv.className = 'quiz-feedback success';
+        feedbackDiv.innerHTML = `
+            <div style="font-size: 24px; margin-bottom: 10px;">🎉 Correct!</div>
+            <p>${explanation}</p>
+            <p style="margin-top: 10px; font-style: italic;">Next question loading...</p>
+        `;
+        feedbackDiv.style.display = 'block';
+
+        // Move to next question after delay
         setTimeout(() => {
-            alert('🎉 Correct! Pass interference is when a defender illegally contacts a receiver while the ball is in the air!');
-        }, 300);
+            currentQuizIndex = (currentQuizIndex + 1) % quizzes.length;
+            feedbackDiv.style.display = 'none';
+            loadQuiz(currentQuizIndex);
+        }, 3000);
     } else {
         element.classList.add('incorrect');
+
+        // Show error feedback
+        feedbackDiv.className = 'quiz-feedback error';
+        feedbackDiv.innerHTML = `
+            <div style="font-size: 24px; margin-bottom: 10px;">❌ Not Quite!</div>
+            <p><strong>Hint:</strong> ${explanation}</p>
+            <p style="margin-top: 10px; font-style: italic;">Try again - you can do it!</p>
+        `;
+        feedbackDiv.style.display = 'block';
+
+        // Re-enable options after showing feedback
         setTimeout(() => {
-            alert('Not quite! Try again or learn more about this penalty.');
             element.classList.remove('incorrect');
-        }, 1000);
+            feedbackDiv.style.display = 'none';
+            allOptions.forEach(opt => opt.style.pointerEvents = 'auto');
+        }, 3000);
     }
 }
 
