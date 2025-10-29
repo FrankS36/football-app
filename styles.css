@@ -794,6 +794,15 @@ body {
         padding: 5px;
     }
 
+    /* Smaller container */
+    .app-container {
+        border-radius: 10px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
     /* Smaller header */
     .header {
         flex-direction: column;
@@ -801,60 +810,171 @@ body {
         padding: 15px;
     }
 
+    .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .logo h1 {
         font-size: 20px;
+    }
+
+    .football-icon {
+        font-size: 30px;
+    }
+
+    .user-info {
+        font-size: 12px;
+        padding: 8px 12px;
     }
 
     /* Compact navigation */
     .nav-bar {
         overflow-x: auto;
         justify-content: flex-start;
+        gap: 5px;
     }
 
     .nav-btn {
-        font-size: 11px;
-        padding: 10px 8px;
-        min-width: 70px;
+        font-size: 10px;
+        padding: 8px 6px;
+        min-width: 60px;
+        gap: 3px;
     }
 
     .nav-icon {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     /* Smaller football fields */
     .field-container, .formation-field {
-        height: 400px;
+        height: 500px;
         max-width: 100%;
+        margin: 10px 0;
     }
 
-    /* Smaller position markers */
+    /* Much smaller position markers */
     .position-marker {
-        width: 45px;
-        height: 45px;
-        font-size: 9px;
+        width: 38px;
+        height: 38px;
+        font-size: 8px;
+        border: 3px solid white;
+        padding: 2px;
     }
 
     /* Stack sections vertically */
     .basics-grid {
         grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .basics-section {
+        padding: 15px;
     }
 
     .quick-actions {
         grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .action-card {
+        padding: 20px;
     }
 
     /* Smaller text */
     .section-header {
-        font-size: 22px;
+        font-size: 20px;
+        gap: 8px;
     }
 
     .welcome h2 {
-        font-size: 24px;
+        font-size: 22px;
+    }
+
+    .welcome p {
+        font-size: 14px;
+    }
+
+    .mascot {
+        font-size: 60px;
     }
 
     /* Stack formation buttons */
     .formation-selector, .formation-toggle {
         flex-direction: column;
         gap: 8px;
+    }
+
+    .formation-btn, .toggle-btn {
+        width: 100%;
+    }
+
+    /* Formation info */
+    .formation-info {
+        padding: 15px;
+    }
+
+    .formation-info h3 {
+        font-size: 20px;
+    }
+
+    .formation-strengths {
+        justify-content: center;
+    }
+
+    .strength-badge {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+
+    /* Position details */
+    .position-detail {
+        padding: 15px;
+    }
+
+    .position-detail h3 {
+        font-size: 20px;
+    }
+
+    .famous-players {
+        flex-direction: column;
+    }
+
+    .player-card {
+        min-width: 100%;
+    }
+
+    /* Penalties */
+    .penalty-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Quiz */
+    .quiz-container {
+        padding: 15px;
+    }
+
+    .quiz-question {
+        font-size: 18px;
+    }
+
+    .quiz-option {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    /* Progress */
+    .badge-collection {
+        justify-content: center;
+    }
+
+    .badge {
+        width: 80px;
+        height: 80px;
+        font-size: 10px;
+    }
+
+    .badge .emoji {
+        font-size: 24px;
     }
 }
