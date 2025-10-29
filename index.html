@@ -262,12 +262,18 @@
                 <p style="color: #7f8c8d; margin-bottom: 20px;">Write about what you're learning and I'll help you understand it better!</p>
 
                 <div class="notebook">
+                    <div style="background: #fff3cd; border: 2px dashed #ffc107; padding: 15px; border-radius: 10px; margin-bottom: 20px;">
+                        <h4 style="color: #856404; margin-bottom: 10px;">⚠️ AI Coach Feature - Not Yet Functional</h4>
+                        <p style="color: #856404; font-size: 14px; margin-bottom: 10px;">This is a placeholder demonstration of how the AI Coach will work in the future. The response below is an example - it doesn't actually analyze your notes yet!</p>
+                        <p style="color: #856404; font-size: 13px; font-style: italic;">Coming soon: Real AI-powered feedback to help you learn!</p>
+                    </div>
+
                     <label style="display: block; margin-bottom: 10px; font-weight: bold; color: #2c3e50;">What did you learn today?</label>
                     <textarea id="noteInput" class="note-input" placeholder="Example: Today I learned that quarterbacks need to read the defense before throwing..."></textarea>
-                    <button class="btn" onclick="getAIFeedback()">✨ Get AI Coach Feedback</button>
+                    <button class="btn" onclick="getAIFeedback()">✨ Get AI Coach Feedback (Demo)</button>
 
                     <div id="aiFeedback" style="display: none;" class="ai-response">
-                        <h4>🤖 Your AI Coach Says:</h4>
+                        <h4>🤖 Your AI Coach Says: (Example Response)</h4>
                         <div id="feedbackContent"></div>
                     </div>
 
