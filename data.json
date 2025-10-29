@@ -706,14 +706,14 @@
           "QB": {"left": 8, "top": 47},
           "FB": {"left": 16, "top": 47},
           "HB": {"left": 22, "top": 47},
-          "LT": {"left": 28, "top": 12},
-          "LG": {"left": 28, "top": 32},
+          "LT": {"left": 28, "top": 18},
+          "LG": {"left": 28, "top": 34},
           "C": {"left": 28, "top": 47},
-          "RG": {"left": 28, "top": 62},
-          "RT": {"left": 28, "top": 82},
-          "WR": {"left": 28, "top": 3},
-          "TE": {"left": 28, "top": 92},
-          "WR2": {"left": 20, "top": 90}
+          "RG": {"left": 28, "top": 60},
+          "RT": {"left": 28, "top": 76},
+          "WR": {"left": 28, "top": 6},
+          "TE": {"left": 28, "top": 88},
+          "WR2": {"left": 20, "top": 88}
         }
       },
       {
@@ -726,14 +726,14 @@
           "QB": {"left": 5, "top": 47},
           "HB": {"left": 12, "top": 35},
           "FB": {"left": 12, "top": 59},
-          "LT": {"left": 28, "top": 12},
-          "LG": {"left": 28, "top": 32},
+          "LT": {"left": 28, "top": 18},
+          "LG": {"left": 28, "top": 34},
           "C": {"left": 28, "top": 47},
-          "RG": {"left": 28, "top": 62},
-          "RT": {"left": 28, "top": 82},
-          "WR": {"left": 28, "top": 3},
-          "TE": {"left": 28, "top": 92},
-          "WR2": {"left": 20, "top": 90}
+          "RG": {"left": 28, "top": 60},
+          "RT": {"left": 28, "top": 76},
+          "WR": {"left": 28, "top": 6},
+          "TE": {"left": 28, "top": 88},
+          "WR2": {"left": 20, "top": 88}
         }
       },
       {
@@ -750,9 +750,9 @@
           "C": {"left": 28, "top": 47},
           "RG": {"left": 28, "top": 59},
           "RT": {"left": 28, "top": 74},
-          "WR": {"left": 28, "top": 3},
-          "WR2": {"left": 20, "top": 90},
-          "WR3": {"left": 28, "top": 92},
+          "WR": {"left": 28, "top": 6},
+          "WR2": {"left": 20, "top": 88},
+          "WR3": {"left": 28, "top": 88},
           "WR4": {"left": 18, "top": 15}
         }
       },
@@ -766,14 +766,14 @@
           "QB": {"left": 8, "top": 47},
           "HB": {"left": 16, "top": 38},
           "FB": {"left": 16, "top": 56},
-          "LT": {"left": 28, "top": 12},
-          "LG": {"left": 28, "top": 32},
+          "LT": {"left": 28, "top": 18},
+          "LG": {"left": 28, "top": 34},
           "C": {"left": 28, "top": 47},
-          "RG": {"left": 28, "top": 62},
-          "RT": {"left": 28, "top": 82},
-          "WR": {"left": 28, "top": 3},
-          "TE": {"left": 28, "top": 92},
-          "WR2": {"left": 20, "top": 90}
+          "RG": {"left": 28, "top": 60},
+          "RT": {"left": 28, "top": 76},
+          "WR": {"left": 28, "top": 6},
+          "TE": {"left": 28, "top": 88},
+          "WR2": {"left": 20, "top": 88}
         }
       }
     ],

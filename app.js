@@ -25,6 +25,12 @@ fetch('data.json')
     })
     .catch(error => console.error('Error loading data:', error));
 
+// Toggle mobile menu
+function toggleMobileMenu() {
+    const navBar = document.getElementById('navBar');
+    navBar.classList.toggle('mobile-open');
+}
+
 // Show different screens
 function showScreen(screenName) {
     // Hide all screens
@@ -38,6 +44,12 @@ function showScreen(screenName) {
     const navButtons = document.querySelectorAll('.nav-btn');
     navButtons.forEach(btn => btn.classList.remove('active'));
     event.target.closest('.nav-btn').classList.add('active');
+
+    // Close mobile menu after selection
+    const navBar = document.getElementById('navBar');
+    if (navBar.classList.contains('mobile-open')) {
+        navBar.classList.remove('mobile-open');
+    }
 }
 
 // Show position details

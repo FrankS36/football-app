@@ -20,8 +20,13 @@
             </div>
         </div>
 
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+            <span class="hamburger-icon">☰</span>
+        </button>
+
         <!-- Navigation -->
-        <div class="nav-bar">
+        <div class="nav-bar" id="navBar">
             <button class="nav-btn active" onclick="showScreen('home')">
                 <span class="nav-icon">🏠</span>
                 <span>Home</span>
@@ -101,16 +106,16 @@
                     <div class="position-marker offense" style="left: 16%; top: 54%;" onclick="showPosition('FB')">FB</div>
 
                     <!-- Offensive Line (5 players) - all on same line -->
-                    <div class="position-marker offense" style="left: 28%; top: 12%;" onclick="showPosition('LT')">LT</div>
-                    <div class="position-marker offense" style="left: 28%; top: 32%;" onclick="showPosition('LG')">LG</div>
+                    <div class="position-marker offense" style="left: 28%; top: 18%;" onclick="showPosition('LT')">LT</div>
+                    <div class="position-marker offense" style="left: 28%; top: 34%;" onclick="showPosition('LG')">LG</div>
                     <div class="position-marker offense" style="left: 28%; top: 47%;" onclick="showPosition('C')">C</div>
-                    <div class="position-marker offense" style="left: 28%; top: 62%;" onclick="showPosition('RG')">RG</div>
-                    <div class="position-marker offense" style="left: 28%; top: 82%;" onclick="showPosition('RT')">RT</div>
+                    <div class="position-marker offense" style="left: 28%; top: 60%;" onclick="showPosition('RG')">RG</div>
+                    <div class="position-marker offense" style="left: 28%; top: 76%;" onclick="showPosition('RT')">RT</div>
 
                     <!-- Receivers (3 players) -->
-                    <div class="position-marker offense" style="left: 28%; top: 3%;" onclick="showPosition('WR')">WR</div>
-                    <div class="position-marker offense" style="left: 28%; top: 92%;" onclick="showPosition('TE')">TE</div>
-                    <div class="position-marker offense" style="left: 20%; top: 90%;" onclick="showPosition('WR')">WR</div>
+                    <div class="position-marker offense" style="left: 28%; top: 6%;" onclick="showPosition('WR')">WR</div>
+                    <div class="position-marker offense" style="left: 28%; top: 88%;" onclick="showPosition('TE')">TE</div>
+                    <div class="position-marker offense" style="left: 20%; top: 88%;" onclick="showPosition('WR')">WR</div>
 
                     <!-- Defensive Positions (11 players) -->
                     <!-- Defensive Line (4 players) -->
