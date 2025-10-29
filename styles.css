@@ -786,3 +786,75 @@ body {
     font-size: 14px;
     line-height: 1.6;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* Reduce body padding */
+    body {
+        padding: 5px;
+    }
+
+    /* Smaller header */
+    .header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    /* Compact navigation */
+    .nav-bar {
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .nav-btn {
+        font-size: 11px;
+        padding: 10px 8px;
+        min-width: 70px;
+    }
+
+    .nav-icon {
+        font-size: 18px;
+    }
+
+    /* Smaller football fields */
+    .field-container, .formation-field {
+        height: 400px;
+        max-width: 100%;
+    }
+
+    /* Smaller position markers */
+    .position-marker {
+        width: 45px;
+        height: 45px;
+        font-size: 9px;
+    }
+
+    /* Stack sections vertically */
+    .basics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-actions {
+        grid-template-columns: 1fr;
+    }
+
+    /* Smaller text */
+    .section-header {
+        font-size: 22px;
+    }
+
+    .welcome h2 {
+        font-size: 24px;
+    }
+
+    /* Stack formation buttons */
+    .formation-selector, .formation-toggle {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
