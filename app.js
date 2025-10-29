@@ -181,10 +181,18 @@ function getAIFeedback() {
 
     // Simulate AI response
     contentDiv.innerHTML = `
-        <p><strong>Great work!</strong> I can see you're learning about quarterbacks reading the defense. That's a really important skill!</p>
-        <p><strong>💭 Think about this:</strong> Why do you think it's important for a quarterback to read the defense BEFORE the snap instead of after?</p>
-        <p><strong>🎯 Next Step:</strong> You might want to learn about common defensive formations like "Cover 2" or "Man Coverage" - this will help you understand what quarterbacks are looking for!</p>
-        <p><strong>Keep it up!</strong> You're making awesome progress! 🌟</p>
+        <p><strong>Excellent observation!</strong> You've identified one of the most important skills in football - pre-snap reads! 🎯</p>
+        <p><strong>💭 Why this matters:</strong> Reading the defense before the snap gives the QB time to adjust the play, change the protection, or even audible to a completely different play. After the snap, everything happens in just 2-3 seconds!</p>
+        <p><strong>🔍 Let's go deeper:</strong> When QBs read the defense, they're looking for things like:
+        <ul style="margin-left: 20px; margin-top: 5px;">
+            <li>How many players are in the box (near the line)</li>
+            <li>Whether corners are playing man or zone coverage</li>
+            <li>Where the safeties are positioned (deep or shallow)</li>
+            <li>If a blitz is coming (extra pass rushers)</li>
+        </ul>
+        </p>
+        <p><strong>🎯 Next Step:</strong> Check out the Formations page to learn about "Cover 2" and "Cover 3" defenses. Understanding these will help you see what quarterbacks like Patrick Mahomes are looking at!</p>
+        <p><strong>Keep crushing it!</strong> You're thinking like a real football analyst! 🌟</p>
     `;
 
     feedbackDiv.style.display = 'block';
